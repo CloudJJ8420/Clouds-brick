@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_153cff32fca8fb07b13512a9dbb2ed09 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_153cff32fca8fb07b13512a9dbb2ed09" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_153cff32fca8fb07b13512a9dbb2ed09 = L.map(
+                "map_153cff32fca8fb07b13512a9dbb2ed09",
+                {
+                    center: [46.8182, 8.2275],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dbfe753631e68a8b2e78a972708cc605 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_153cff32fca8fb07b13512a9dbb2ed09);
+        
+    
+            var marker_2970a3f35d41a99e07841ff60892e8b5 = L.marker(
+                [46.0207, 7.7491],
+                {}
+            ).addTo(map_153cff32fca8fb07b13512a9dbb2ed09);
+        
+    
+        var popup_e74fd17aa54639090759e9e7ec854b62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f049f63793f329b885614f0796f0bda8 = $(`<div id="html_f049f63793f329b885614f0796f0bda8" style="width: 100.0%; height: 100.0%;"><b>Zermatt</b></div>`)[0];
+            popup_e74fd17aa54639090759e9e7ec854b62.setContent(html_f049f63793f329b885614f0796f0bda8);
+        
+
+        marker_2970a3f35d41a99e07841ff60892e8b5.bindPopup(popup_e74fd17aa54639090759e9e7ec854b62)
+        ;
+
+        
+    
+    
+            marker_2970a3f35d41a99e07841ff60892e8b5.bindTooltip(
+                `<div>
+                     Zermatt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3f91ad6cccbb31a94cbe6a43c8354a2 = L.marker(
+                [46.0954, 7.2266],
+                {}
+            ).addTo(map_153cff32fca8fb07b13512a9dbb2ed09);
+        
+    
+        var popup_bca4af766115dee3a8f3aba40ae6003c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0c0b621866b756022c32fd71e334c5e = $(`<div id="html_a0c0b621866b756022c32fd71e334c5e" style="width: 100.0%; height: 100.0%;"><b>Verbier</b></div>`)[0];
+            popup_bca4af766115dee3a8f3aba40ae6003c.setContent(html_a0c0b621866b756022c32fd71e334c5e);
+        
+
+        marker_b3f91ad6cccbb31a94cbe6a43c8354a2.bindPopup(popup_bca4af766115dee3a8f3aba40ae6003c)
+        ;
+
+        
+    
+    
+            marker_b3f91ad6cccbb31a94cbe6a43c8354a2.bindTooltip(
+                `<div>
+                     Verbier
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01d7ae373791126b54a9dba4b123fcea = L.marker(
+                [46.4907, 9.8352],
+                {}
+            ).addTo(map_153cff32fca8fb07b13512a9dbb2ed09);
+        
+    
+        var popup_c3e8cfbb7386e199818d541935611f8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db79edbba35feebf41b05200431aea6f = $(`<div id="html_db79edbba35feebf41b05200431aea6f" style="width: 100.0%; height: 100.0%;"><b>St. Moritz</b></div>`)[0];
+            popup_c3e8cfbb7386e199818d541935611f8f.setContent(html_db79edbba35feebf41b05200431aea6f);
+        
+
+        marker_01d7ae373791126b54a9dba4b123fcea.bindPopup(popup_c3e8cfbb7386e199818d541935611f8f)
+        ;
+
+        
+    
+    
+            marker_01d7ae373791126b54a9dba4b123fcea.bindTooltip(
+                `<div>
+                     St. Moritz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bf9907678d2a100f5329f4ff071e1f0 = L.marker(
+                [46.1078, 7.9289],
+                {}
+            ).addTo(map_153cff32fca8fb07b13512a9dbb2ed09);
+        
+    
+        var popup_56490819566cb0af533c8b00247ac947 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_409dc2881cff03dc62eab47ac3296837 = $(`<div id="html_409dc2881cff03dc62eab47ac3296837" style="width: 100.0%; height: 100.0%;"><b>Saas-Fee</b></div>`)[0];
+            popup_56490819566cb0af533c8b00247ac947.setContent(html_409dc2881cff03dc62eab47ac3296837);
+        
+
+        marker_9bf9907678d2a100f5329f4ff071e1f0.bindPopup(popup_56490819566cb0af533c8b00247ac947)
+        ;
+
+        
+    
+    
+            marker_9bf9907678d2a100f5329f4ff071e1f0.bindTooltip(
+                `<div>
+                     Saas-Fee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31e7afee656d5869d06c64370f20c4a2 = L.marker(
+                [46.6242, 8.0414],
+                {}
+            ).addTo(map_153cff32fca8fb07b13512a9dbb2ed09);
+        
+    
+        var popup_b60246be1a7c9c9d01fef6145e749516 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c3d28f9417ea9b725407823719d0151 = $(`<div id="html_3c3d28f9417ea9b725407823719d0151" style="width: 100.0%; height: 100.0%;"><b>Grindelwald-Wengen</b></div>`)[0];
+            popup_b60246be1a7c9c9d01fef6145e749516.setContent(html_3c3d28f9417ea9b725407823719d0151);
+        
+
+        marker_31e7afee656d5869d06c64370f20c4a2.bindPopup(popup_b60246be1a7c9c9d01fef6145e749516)
+        ;
+
+        
+    
+    
+            marker_31e7afee656d5869d06c64370f20c4a2.bindTooltip(
+                `<div>
+                     Grindelwald-Wengen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0311a2f7e09124d2bb6fd0673c6d907b = L.marker(
+                [46.7983, 9.8415],
+                {}
+            ).addTo(map_153cff32fca8fb07b13512a9dbb2ed09);
+        
+    
+        var popup_467a277707929a14c8324a7831dac64a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b57e369307f99161cb8d65c7d2f3f318 = $(`<div id="html_b57e369307f99161cb8d65c7d2f3f318" style="width: 100.0%; height: 100.0%;"><b>Davos-Klosters</b></div>`)[0];
+            popup_467a277707929a14c8324a7831dac64a.setContent(html_b57e369307f99161cb8d65c7d2f3f318);
+        
+
+        marker_0311a2f7e09124d2bb6fd0673c6d907b.bindPopup(popup_467a277707929a14c8324a7831dac64a)
+        ;
+
+        
+    
+    
+            marker_0311a2f7e09124d2bb6fd0673c6d907b.bindTooltip(
+                `<div>
+                     Davos-Klosters
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
